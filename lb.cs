@@ -20,7 +20,7 @@ class Program {
         Thread E = new Thread(new ThreadStart(ThreadMethod));
         Thread F = new Thread(new ThreadStart(ThreadMethod));
         
-        string[] Threads = new Threads[6] { A, B, C, D, E, F };
+        Thread[] Threads = new array[6] { A, B, C, D, E, F };
         
         Threads[0] = Thread A;
         Threads[1] = Thread B;
@@ -29,8 +29,11 @@ class Program {
         Threads[4] = Thread E;
         Threads[5] = Thread F;
         
-        while (Threads.IsAlive != false) {
+        while (Threads.IsAlive != true) {
             var Threads = Enum.Threads();
+            if (Threads.IsAlive = true) {
+                Threads.ThreadStart(ThreadMethod);
+            }
         }
     }
 }
